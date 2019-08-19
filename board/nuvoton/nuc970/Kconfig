@@ -1,4 +1,4 @@
-if (TARGET_NUC970 || TARGET_NUC970_TOMATO || TARGET_NUC970_ETH2UART)
+if (TARGET_NUC970 || TARGET_NUC970_SPI  || TARGET_NUC970_TOMATO || TARGET_NUC970_ETH2UART)
 
 config SYS_BOARD
 	default "nuc970"
@@ -11,6 +11,7 @@ config SYS_SOC
 
 config SYS_CONFIG_NAME
 	default "nuc970_evb" if TARGET_NUC970
+	default "nuc970_spi_evb" if TARGET_NUC970_SPI
 	default "nuc970_tomato" if TARGET_NUC970_TOMATO
 	default "nuc970_eth2uart" if TARGET_NUC970_ETH2UART
 
